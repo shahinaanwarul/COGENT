@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cogent-trend-forecasting"
+version = "0.1.0"
+description = "Reference Python implementation of the COGENT Scientific Reports manuscript"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=2.0",
+  "pandas>=2.0",
+  "torch>=2.2",
+  "scikit-learn>=1.4",
+  "scipy>=1.12",
+  "statsmodels>=0.14",
+  "optuna>=4.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["cogent*"]
